@@ -98,6 +98,8 @@ button {
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    display: block;
+    margin-bottom: 16px;
 }
 
 .main-header-menu-list,
@@ -170,10 +172,13 @@ button {
     background-color: var(--ocean)
 }
 
+.feature {
+    padding: 120px 0;
+}
+
 .feature-list {
     display: flex;
-    gap: 40px;
-    padding: 32px 16px;
+    gap: 40px;    
 }
 
 .feature-list-item-title {
@@ -188,6 +193,7 @@ button {
     line-height: 24px;
     letter-spacing: 0.4px;
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
 .feature-list-item-description {
@@ -197,13 +203,13 @@ button {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
-    text-transform: capitalize;
 }
 
 .what-are-we-doing {
     background: var(--white);
     display: flex;
     box-sizing: content-box;
+    padding: 120px 0;
 }
 
 .what-are-we-doing-title {
@@ -215,18 +221,17 @@ button {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
-.what-are-we-doing-list-item {
-    display: flex;
-    flex-direction: column;
-    margin: 24px 16px;
-  }
+.what-are-we-doing-list {
+    justify-content: space-between;
+}
 
 .our-team {
     background: var(--cloud);
     box-sizing: content-box;
-    padding: 24px 0;
+    padding: 120px 0;
 }
 
 .our-team-title {
@@ -238,6 +243,7 @@ button {
     line-height: 40px; 
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    margin-bottom: 72px;
  }
 
  .our-team-list{
@@ -251,16 +257,17 @@ button {
     display: inline-flex;
     padding-bottom: 0;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 32px;
     border-radius: 0px 0px 4px 4px;
     background: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-list-item-details {
-    padding: 32px 16px;
+    display: block;
+    width: 100%;
+    padding: 0 16px 32px;
 }
 
 .our-team-list-item-title {
@@ -270,6 +277,7 @@ button {
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.4px;
+    margin-top: 32px;
 } 
 
 .our-team-list-item-decription {
@@ -283,6 +291,7 @@ button {
 
 .footer {
     background: var(--navyblue);
+    padding: 100px 0;
 }
 
 .footer-description {
@@ -296,16 +305,14 @@ button {
 }
 
 .portfolio {
-    border-bottom: 1px solid var(--cornflower);
     background: var(--white);
-    padding-left: 24px;
+    padding: 100px;
 }
 
 .portfolio-filter-list-cta {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 24px;
+    gap: 40px;
 }
 
 .portfolio-filter-list-item-cta-all {
@@ -315,13 +322,10 @@ button {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
     letter-spacing: 0.64px;
     text-transform: capitalize;
     display: flex;
-    padding: 12px 24px;
     align-items: flex-start;
-    border-radius: 4px;
     background: var(--ocean);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
@@ -337,10 +341,8 @@ button {
     letter-spacing: 0.64px;
     text-transform: capitalize;
     display: flex;
-    padding: 12px 24px;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
     border: 1px solid var(--cornflower);
     background: var(--cloud);
 }
@@ -357,30 +359,24 @@ button {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px   rgba(0, 0, 0, 0.10);
 }
 
-.portfolio-container {
-    padding: 40px 16px;
-}
-
 .portfolio-list-item-details {
-    padding: 32px 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .portfolio-row1-list {
     display: flex;
     gap: 40px;
-    box-sizing: content-box;
 }
 
 .portfolio-row2-list {
     display: flex;
     gap: 40px;
-    box-sizing: content-box;
 }
 
 .portfolio-row3-list {
     display: flex;
     gap: 40px;
-    box-sizing: content-box;
 }
 
 .portfolio-list-item-title {
@@ -405,6 +401,7 @@ button {
 
 .portfolio-footer {
     background: var(--navyblue);
+    padding: 100px 0;
 }
 
 .portfolio-footer-logo-link {
@@ -416,6 +413,8 @@ button {
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    display: block;
+    margin-bottom: 16px;
 }
 
 .portfolio-footer-description {
@@ -425,6 +424,7 @@ button {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+    text-transform: none;
 }
 
 
