@@ -30,8 +30,7 @@ button {
     gap: 10px;
     border-radius: 4px;
     background: var(--iris);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
- }
+}
 
 :root {
     --iris: #4D5AE5;
@@ -65,8 +64,10 @@ button {
 }
 
 .header {
-    padding: 24px 0; 
+    width: 100%;
+    padding: 11px 0; 
     border-bottom: 1px solid var--(cornflower);
+    background-color: var(--white);
 }
 
 .header-container {
@@ -209,7 +210,7 @@ button {
     background: var(--white);
     display: flex;
     box-sizing: content-box;
-    padding: 120px 0;
+    padding-bottom: 120px;
 }
 
 .what-are-we-doing-title {
@@ -250,7 +251,6 @@ button {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .our-team-list-item {
@@ -267,7 +267,7 @@ button {
 .our-team-list-item-details {
     display: block;
     width: 100%;
-    padding: 0 16px 32px;
+    padding: 32px 16px;
 }
 
 .our-team-list-item-title {
@@ -277,7 +277,6 @@ button {
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.4px;
-    margin-top: 32px;
 } 
 
 .our-team-list-item-decription {
@@ -323,6 +322,7 @@ button {
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.64px;
+    line-height: 24px;
     text-transform: capitalize;
     display: flex;
     align-items: flex-start;
@@ -345,6 +345,7 @@ button {
     align-items: center;
     border: 1px solid var(--cornflower);
     background: var(--cloud);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-filter-list-item-cta-all:hover {    
@@ -359,24 +360,24 @@ button {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px   rgba(0, 0, 0, 0.10);
 }
 
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    justify-content: center;
+}
+
+.portfolio-list-item {
+    border: 1px solid var(--cornflower);
+}
+
+
 .portfolio-list-item-details {
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
-.portfolio-row1-list {
-    display: flex;
-    gap: 40px;
-}
-
-.portfolio-row2-list {
-    display: flex;
-    gap: 40px;
-}
-
-.portfolio-row3-list {
-    display: flex;
-    gap: 40px;
+    display: block;
+    width: 100%;
+    padding: 32px 16px;
 }
 
 .portfolio-list-item-title {
@@ -384,9 +385,8 @@ button {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
     letter-spacing: 0.4px;
-    text-transform: capitalize;
+    display: block;
 }
 
 .portfolio-list-item-description {
@@ -394,9 +394,7 @@ button {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0.32px;
-    text-transform: capitalize;
 }
 
 .portfolio-footer {
